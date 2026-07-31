@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about the California State University, Fullerton Master of Public Administration program: evening and hybrid study for public-service professionals.">
+  <meta name="theme-color" content="#00244e">
+  <title>Master of Public Administration | Cal State Fullerton</title>
+  <style>
+    :root {
+      --navy: #00244e;
+      --navy-dark: #001b3b;
+      --orange: #e87511;
+      --ink: #1d2733;
+      --muted: #536270;
+      --line: #b9c7d1;
+      --blue-pale: #e8f7fb;
+      --blue-light: #d8edf4;
+      --white: #ffffff;
+      --max-width: 72rem;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    a { color: var(--navy); text-decoration-thickness: 0.125em; text-underline-offset: 0.16em; }
+    a:hover { color: var(--navy-dark); }
+    a:focus-visible, button:focus-visible {
+      outline: 0.22rem solid var(--orange);
+      outline-offset: 0.22rem;
+    }
+
+    .skip-link {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 1rem;
+      padding: 0.65rem 1rem;
+      color: var(--white);
+      background: var(--navy);
+      transform: translateY(-110%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .container { width: min(100% - 2.5rem, var(--max-width)); margin-inline: auto; }
+
+    .site-header {
+      border-bottom: 0.25rem solid var(--orange);
+      background: var(--white);
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      min-height: 6rem;
+      padding-block: 1rem;
+    }
+
+    .wordmark { margin: 0; color: #003e71; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.35rem, 2.6vw, 2.25rem); font-weight: 700; letter-spacing: -0.07em; line-height: 1; white-space: nowrap; }
+    .wordmark span { color: var(--orange); }
+    .program-label { margin: 0; color: var(--navy); font-size: 0.9rem; font-weight: 750; letter-spacing: 0.06em; text-align: right; text-transform: uppercase; }
+
+    .hero { background: var(--navy); color: var(--white); }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(17rem, 0.95fr);
+      align-items: stretch;
+    }
+
+    .hero-content { display: grid; align-content: center; padding: clamp(2.5rem, 7vw, 5rem) clamp(1.5rem, 5vw, 4.5rem) clamp(2.75rem, 7vw, 5.25rem) 0; }
+    .eyebrow { margin: 0 0 0.55rem; color: inherit; font-size: 0.88rem; font-weight: 750; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    h1, h2, h3 { color: var(--navy); line-height: 1.15; }
+    h1 { max-width: 12ch; margin: 0; color: var(--white); font-size: clamp(2.3rem, 5vw, 4.6rem); letter-spacing: -0.035em; }
+    h2 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.5rem); }
+    h3 { margin: 0; font-size: 1.2rem; }
+
+    .hero-summary { max-width: 39rem; margin: 1.25rem 0 0; font-size: clamp(1.05rem, 1.5vw, 1.25rem); }
+    .hero-image { width: 100%; min-height: 100%; object-fit: cover; object-position: 52% 60%; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 0.85rem; margin: 1.75rem 0 0; }
+    .button {
+      display: inline-block;
+      padding: 0.7rem 1rem;
+      border: 0.14rem solid currentColor;
+      border-radius: 0.3rem;
+      color: var(--navy);
+      background: var(--white);
+      font-weight: 750;
+      text-decoration: none;
+    }
+    .button:hover { color: var(--white); background: var(--navy-dark); }
+    .button--quiet { color: var(--white); background: transparent; }
+    .button--quiet:hover { color: var(--navy); background: var(--white); }
+
+    .section { padding-block: clamp(2.5rem, 5vw, 4rem); }
+    .section--pale { background: var(--blue-pale); }
+    .section-intro { max-width: 46rem; margin: 0.85rem 0 0; font-size: 1.1rem; }
+
+    .facts {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin: 2rem 0 0;
+      border: 1px solid var(--line);
+      border-radius: 0.5rem;
+      overflow: hidden;
+      background: var(--line);
+    }
+    .fact { margin: 0; padding: 1.2rem; background: var(--white); }
+    .fact dt { color: var(--muted); font-size: 0.82rem; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; }
+    .fact dd { margin: 0.25rem 0 0; color: var(--navy); font-size: 1.05rem; font-weight: 750; line-height: 1.35; }
+    .fact--schedule dd { font-size: 0.96rem; letter-spacing: -0.015em; white-space: nowrap; }
+
+    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 0; margin: 2rem 0 0; list-style: none; }
+    .card { height: 100%; padding: 1.35rem; border: 1px solid var(--line); border-radius: 0.5rem; background: var(--white); }
+    .card p { margin: 0.55rem 0 0; }
+
+    .two-column { display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.95fr); gap: clamp(2rem, 7vw, 5rem); align-items: start; }
+    .feature-list, .course-list { padding-left: 1.35rem; }
+    .feature-list { margin: 1.25rem 0 0; }
+    .feature-list li + li, .course-list li + li { margin-top: 0.9rem; }
+    .feature-list strong { color: var(--navy); }
+
+    .coursework { padding: 1.5rem; border-radius: 0.5rem; background: var(--blue-light); }
+    .coursework h2 { font-size: 1.5rem; }
+    .course-list { margin: 1rem 0 1.5rem; }
+    .concentration { padding-top: 1rem; border-top: 1px solid #8cabb8; }
+    .concentration p { margin: 0.4rem 0 0; }
+
+    .alumni { margin: 2rem auto 0; padding: 1.25rem 1.5rem; border-left: 0.35rem solid var(--orange); background: var(--white); }
+    .alumni p { margin: 0.35rem 0 0; }
+
+    .admissions-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    .admissions-grid h3 { color: var(--navy); }
+    .admissions-grid p { margin: 0.5rem 0 0; }
+    .fine-print { color: var(--muted); font-size: 0.94rem; }
+
+    .site-footer { padding-block: 3rem; color: var(--white); background: var(--navy); }
+    .footer-grid { display: flex; align-items: end; justify-content: space-between; gap: 2rem; }
+    .site-footer h2, .site-footer p { color: var(--white); }
+    .site-footer h2 { max-width: 24ch; }
+    .site-footer a { color: var(--white); }
+    .site-footer a:hover { color: #ffcf9f; }
+    .site-footer .button { color: var(--navy); }
+    .site-footer .button:hover { color: var(--white); background: var(--navy-dark); }
+    .footer-contact { margin: 1rem 0 0; }
+    .updated { margin-top: 1.5rem; color: #d0e1ee !important; font-size: 0.9rem; }
+
+    @media (max-width: 48rem) {
+      .header-content { min-height: 5rem; }
+      .program-label { display: none; }
+      .hero-grid, .two-column { grid-template-columns: 1fr; }
+      .hero-content { padding-inline: 0; }
+      .hero-image { min-height: 17rem; max-height: 23rem; }
+      .facts, .card-grid, .admissions-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { align-items: start; flex-direction: column; }
+    }
+
+    @media (max-width: 32rem) {
+      .container { width: min(100% - 2rem, var(--max-width)); }
+      .header-content { gap: 0.8rem; }
+      .program-label { max-width: 10ch; }
+      .facts, .card-grid, .admissions-grid { grid-template-columns: 1fr; }
+      .actions { align-items: stretch; flex-direction: column; }
+      .button { text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <p class="wordmark">Cal State <span>Fullerton.</span></p>
+      <p class="program-label">Graduate program<br>Master of Public Administration</p>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Master of Public Administration</p>
+          <h1 id="page-title">Move from doing the work to running it.</h1>
+          <p class="hero-summary">The Cal State Fullerton MPA offers evening and hybrid classes for professionals in government, nonprofits, and public agencies.</p>
+          <p class="actions">
+            <a class="button" href="https://mpa.fullerton.edu/">Explore the MPA program</a>
+            <a class="button button--quiet" href="mailto:mpaprogram@fullerton.edu">Email the MPA program</a>
+          </p>
+        </div>
+        <img class="hero-image" src="assets/csuf-mpa-hero.jpg" alt="Autumn afternoon on the Cal State Fullerton campus outside the Social Sciences building, with seating beneath trees">
+      </div>
+    </section>
+
+    <section class="section section--pale" aria-labelledby="overview-heading">
+      <div class="container">
+        <h2 id="overview-heading">A management degree for public service</h2>
+        <p class="section-intro">Build the analytical, financial, organizational, and leadership skills to take on more responsibility in the public sector.</p>
+        <dl class="facts">
+          <div class="fact"><dt>Program length</dt><dd>36 units</dd></div>
+          <div class="fact"><dt>Class format</dt><dd>Evening and hybrid</dd></div>
+          <div class="fact fact--schedule"><dt>Schedule</dt><dd>Monday–Thursday, 7:00–9:45 pm</dd></div>
+          <div class="fact"><dt>Capstone</dt><dd>Seminar, not a thesis</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="careers-heading">
+      <div class="container">
+        <h2 id="careers-heading">Where an MPA can take you</h2>
+        <p class="section-intro">The management track across public service.</p>
+        <ul class="card-grid">
+          <li><article class="card"><h3>City and county</h3><p>Management analyst, budget analyst, and city manager track.</p></article></li>
+          <li><article class="card"><h3>Nonprofit sector</h3><p>Program director, development officer, and operations lead.</p></article></li>
+          <li><article class="card"><h3>Health and human services</h3><p>Public health administrator, contracts, and grants manager.</p></article></li>
+          <li><article class="card"><h3>Justice and public safety</h3><p>Agency administration, planning, and emergency management.</p></article></li>
+          <li><article class="card"><h3>Education administration</h3><p>Campus and district operations and student affairs.</p></article></li>
+          <li><article class="card"><h3>Special districts</h3><p>Water, transit, parks, regional planning, and policy.</p></article></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--pale" aria-label="Program structure and coursework">
+      <div class="container two-column">
+        <div>
+          <h2>Built around a working schedule</h2>
+          <ul class="feature-list">
+            <li><strong>Evening classes, Monday–Thursday, 7:00–9:45 pm.</strong> A mix of in-person and online courses.</li>
+            <li><strong>Three years part-time.</strong> Most students take two courses per term; students can complete the program in two years full-time.</li>
+            <li><strong>A cohort of working professionals.</strong> Classmates bring current agency and nonprofit experience.</li>
+            <li><strong>A capstone seminar, not a thesis.</strong> POSC 521 carries the comprehensive exam.</li>
+          </ul>
+        </div>
+        <div class="coursework">
+          <h2>Core coursework</h2>
+          <p>21 units</p>
+          <ul class="course-list">
+            <li>Foundations of Public Administration</li>
+            <li>Administrative Research and Analysis</li>
+            <li>Organizational Theory and Behavior</li>
+            <li>Public Budgeting and Finance</li>
+            <li>Human Resources Management</li>
+            <li>Capstone Seminar</li>
+          </ul>
+          <div class="concentration">
+            <h3>Concentration and electives</h3>
+            <p>15 units in Human Resources, Public Finance, Local Government, or Public Policy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container alumni">
+        <h2>Alumni work at</h2>
+        <p>County of Orange, Yorba Linda Water District, City of Fountain Valley, California State University, and many more.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="apply-heading">
+      <div class="container">
+        <h2 id="apply-heading">Plan your next step</h2>
+        <div class="admissions-grid">
+          <div>
+            <h3>Application deadlines</h3>
+            <p><strong>Fall:</strong> May 1<br><strong>Spring:</strong> November 15</p>
+          </div>
+          <div>
+            <h3>Part-time tuition</h3>
+            <p><strong>$2,480 per term</strong></p>
+            <p class="fine-print">2026–27 California resident tuition for six units; campus fees are additional.</p>
+          </div>
+          <div>
+            <h3>Talk with us</h3>
+            <p><a href="mailto:mpaprogram@fullerton.edu">mpaprogram@fullerton.edu</a><br><a href="tel:+16572783521">(657) 278-3521</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="eyebrow">Next step</p>
+        <h2>Come talk to us—or apply tonight.</h2>
+        <p class="footer-contact"><a href="https://mpa.fullerton.edu/">mpa.fullerton.edu</a><br><a href="mailto:mpaprogram@fullerton.edu">mpaprogram@fullerton.edu</a> · <a href="tel:+16572783521">(657) 278-3521</a></p>
+        <p class="updated">Updated July 2026</p>
+      </div>
+      <a class="button" href="https://mpa.fullerton.edu/">Visit the MPA website</a>
+    </div>
+  </footer>
+</body>
+</html>

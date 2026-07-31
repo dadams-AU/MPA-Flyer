@@ -15,8 +15,10 @@ The project is a simple HTML flyer that is designed to be printed as a clean, si
 
 - flyer.html — the main flyer source in HTML/CSS
 - flyer-print.html — a print-optimized variant with a lighter color palette for printing
+- csuf-mpa-program.html — a responsive, accessible web version of the MPA program information
+- assets/csuf-mpa-hero.jpg — web-optimized campus image used by the web page and both flyers
 - assets/qr-mpa-fullerton.png — generated QR code image for the program website
-- 1C7A4634.jpg — campus photo used in the hero section
+- 1C7A4634.jpg — original high-resolution campus photo source
 - csuf_logo.png — CSUF logo used in the flyer
 - MPA-Flyer.pdf — generated printable PDF from flyer.html
 - MPA-Flyer-print.pdf — generated printable PDF from flyer-print.html
@@ -32,7 +34,7 @@ The flyer is visually polished and print-friendly, but it is not fully accessibl
 
 ## How to use it
 
-Open flyer.html in a browser and print it to PDF, or use the existing generated PDFs directly.
+Open flyer.html in a browser and print it to PDF, or use the existing generated PDFs directly. For an accessible, shareable web page, publish csuf-mpa-program.html and assets/csuf-mpa-hero.jpg together, then link to its hosted URL.
 
 If you want to make it more accessible in the future, the next steps would be:
 
