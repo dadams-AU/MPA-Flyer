@@ -1,0 +1,59 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 816,
+      "h": 1056,
+      "title": "Current flier",
+      "print": "fixed"
+    },
+    {
+      "file": "Poster.dc.html",
+      "x": 1016,
+      "y": 0,
+      "w": 816,
+      "h": 1056,
+      "title": "Direction A · Poster",
+      "print": "fixed"
+    },
+    {
+      "file": "Editorial.dc.html",
+      "x": 1912,
+      "y": 0,
+      "w": 816,
+      "h": 1056,
+      "title": "Direction B · Editorial",
+      "print": "fixed"
+    },
+    {
+      "file": "Pathway.dc.html",
+      "x": 2808,
+      "y": 0,
+      "w": 816,
+      "h": 1056,
+      "title": "Direction C · Pathway",
+      "print": "fixed"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "note-current",
+      "x": 0,
+      "y": -170,
+      "w": 440,
+      "text": "Current flier, rebuilt 1:1 from flier.html.\nThe Screen / Print switch above it swaps between the flier.html and flier-print.html palettes."
+    },
+    {
+      "id": "note-directions",
+      "x": 1016,
+      "y": -170,
+      "w": 640,
+      "text": "Three redesign directions, same content and brand, body type at 12pt or larger.\nA · Poster: one big headline, the five facts, a big QR. Drops coursework and alumni.\nB · Editorial: photo-led, prose plus an at-a-glance card. Ink-heavy, no alumni line.\nC · Pathway: the applicant's path as numbered steps, facts in a rail. Reads as a sequence.\nPick one and it gets built into the main flier."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}
