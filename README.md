@@ -7,21 +7,25 @@ This repository contains a one-page print flier for the CSUF Master of Public Ad
 The project is a simple HTML flier that is designed to be printed as a clean, single-page PDF. It includes:
 
 - a header with the CSUF logo and program identity
-- a large hero image and headline
-- program details, career paths, coursework, and contact information
-- a QR code that links to the MPA website
+- a navy banner over a campus palm photo, carrying the headline
+- five program facts: when, study, cost, application deadlines, and career paths
+- contact information and a QR code that links to the MPA website
+
+The layout is Direction A, Poster, from the `design/` canvas, adopted on
+2026-10-07. Its headline matches the MPA program card.
 
 ## Files
 
-- flier.html — the main flier source in HTML/CSS
-- flier-print.html — a print-optimized variant with a lighter color palette for printing
+- flier.html — the flier source in HTML/CSS, Letter size
+- flier-print.html — the same page with 0.125 in bleed on every side (8.75 × 11.25 in, no crop marks), for Digital Print Services; it differs from flier.html only in `--bleed` and `@page`
 - csuf-mpa-program.html — a responsive, accessible web version of the MPA program information
-- assets/csuf-mpa-hero.jpg — web-optimized campus image used by the web page and both fliers
+- assets/mpa-banner.jpg — banner photo, 2700 px wide, from the program cards' 3T8A9224 (palms over the tower)
+- assets/csuf-mpa-hero.jpg — web-optimized campus image used by the web page
 - assets/qr-mpa-fullerton.png — generated QR code image for the program website
-- 1C7A4634.jpg — original high-resolution campus photo source
+- 1C7A4634.jpg — original high-resolution source of the web page's campus photo
 - csuf_logo.png — CSUF logo used in the flier
-- MPA-Flier.pdf — generated printable PDF from flier.html
-- MPA-Flier-print.pdf — generated printable PDF from flier-print.html
+- MPA-Flier.pdf — Letter PDF from flier.html, for email and office printing
+- MPA-Flier-print.pdf — press PDF with bleed from flier-print.html; send this one to DPS
 
 ## Why it is not fully accessible
 
